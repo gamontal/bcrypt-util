@@ -11,6 +11,22 @@ $ npm install -g bcrypt-util
 USAGE
 =====
 
+$ bcrypt --help
+
+  Usage: bcrypt [options] [command]
+
+
+  Commands:
+
+    hash <string> [salt_rounds]  generate a BCrypt hash
+    compare <string> <hash>      compare a BCrypt hash
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+
+
 Generate a BCrypt hash:
 
 $ bcrypt hash 'raw text'
@@ -23,6 +39,7 @@ Compare a BCrypt hash:
 
 $ bcrypt compare 'raw text' '$2a$10$O.YQ9gpS1ruOIBECVs5cFe9znc1NspGnRZJ.NRZtgxGkJqgSqlgTG'
 true
+
 
 TESTING
 =======
