@@ -1,0 +1,43 @@
+ ____________________________________
+| bcrypt-util                        |
+| > Command-line utility for bcrypt  |
+|____________________________________|
+
+INSTALLATION
+============
+
+$ npm install -g bcrypt-util
+
+USAGE
+=====
+
+Generate a BCrypt hash:
+
+$ bcrypt hash 'raw text'
+$2a$10$O.YQ9gpS1ruOIBECVs5cFe9znc1NspGnRZJ.NRZtgxGkJqgSqlgTG
+
+$ bcrypt hash 'raw text' 10
+$2a$10$O.YQ9gpS1ruOIBECVs5cFe9znc1NspGnRZJ.NRZtgxGkJqgSqlgTG
+
+Compare a BCrypt hash:
+
+$ bcrypt compare 'raw text' '$2a$10$O.YQ9gpS1ruOIBECVs5cFe9znc1NspGnRZJ.NRZtgxGkJqgSqlgTG'
+true
+
+TESTING
+=======
+
+$ make test
+
+Security Considerations
+=======================
+
+Besides incorporating a salt to protect against rainbow table attacks, bcrypt is an adaptive function: over time, the iteration count can be increased to make it slower, so it remains resistant to brute-force search attacks even with increasing computation power.
+(https://en.wikipedia.org/wiki/Bcrypt)
+
+LICENSE
+=======
+
+MIT
+
+
