@@ -30,12 +30,14 @@ cli
 
 cli
   .command('hash <string> [salt_rounds]')
+  .description('generate a BCrypt hash')
   .action(function (string, rounds) {
     BCRYPT.hash(string, rounds);
   });
 
 cli
   .command('compare <string> <hash>')
+  .description('compare a BCrypt hash')
   .action(function (string, hash) {
     BCRYPT.compare(string, hash);
   });

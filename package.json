@@ -1,7 +1,7 @@
 {
   "name": "bcrypt-util",
   "version": "1.0.0",
-  "description": "A simple command-line utility to generate a bcrypt hash",
+  "description": "A simple command-line utility to generate a BCrypt hash",
   "main": "cli.js",
   "bin": {
     "bcrypt": "index.js"
