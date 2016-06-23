@@ -1,0 +1,39 @@
+{
+  "name": "bcrypt-util",
+  "version": "1.0.0",
+  "description": "A simple command-line utility to generate a bcrypt hash",
+  "main": "cli.js",
+  "bin": {
+    "bcrypt": "index.js"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js"
+  },
+  "keywords": [
+    "bcrypt",
+    "hash",
+    "cli"
+  ],
+  "author": "Gabriel Montalvo",
+  "homepage": "https://github.com/gmontalvoriv/bcrypt-util",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmontalvoriv/bcrypt-util"
+  },
+  "bugs": {
+    "url": "https://github.com/gmontalvoriv/bcrypt-util"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "mocha-sinon": "^1.1.5",
+    "sinon": "^1.17.4"
+  }
+}
