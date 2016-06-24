@@ -1,7 +1,7 @@
-Overview
-========
-
-A simple command-line utility to generate and compare a BCrypt hash
+ ____________________________________
+| bcrypt-util                        |
+| > Command-line utility for bcrypt  |
+|____________________________________|
 
 INSTALLATION
 ============
